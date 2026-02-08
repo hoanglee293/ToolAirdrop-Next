@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-let domainName = process.env.DOMAIN_NAME;
+let domainName = process.env.NEXT_PUBLIC_BASE_URL;
 
 if (domainName && (domainName.startsWith('https://') || domainName.startsWith('http://'))) {
   try {
