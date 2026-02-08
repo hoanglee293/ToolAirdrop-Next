@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full max-w-[100%] py-5 border-b-[1px] border-solid dark:border-gray-100/10 border-gray-700/10 ${stickyMenu
+      className={`fixed left-0 top-0 z-99999 w-full max-w-[100%] py-5 border-b-[1px] border-solid dark:border-gray-100/10 border-gray-700/10 bg-white dark:bg-black ${stickyMenu
         ? "bg-white py-4! shadow-sm transition duration-100 dark:bg-black"
         : ""
         }`}
@@ -115,7 +115,7 @@ const Header = () => {
         {/* Nav Menu Start   */}
         <div
           className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${navigationOpen &&
-            "navbar visible! mt-4 h-calc(100vh - 100px) rounded-md bg-white p-5 dark:bg-black shadow-solid-5 xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
+            "navbar visible!  h-calc(100vh - 100px) rounded-md bg-white p-5 dark:bg-black shadow-solid-5 xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
             }`}
         >
           <nav>
