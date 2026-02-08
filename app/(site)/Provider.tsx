@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
 import ToasterContext from "../context/ToastContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 
 export default function ClientLayout({
     children,
@@ -24,7 +24,9 @@ export default function ClientLayout({
                 defaultTheme="light"
             >
                 <Lines />
-                <Header />
+                <Suspense fallback={null}>
+                    <Header />
+                </Suspense>
                 <ToasterContext />
                 {children}
                 <Footer />
