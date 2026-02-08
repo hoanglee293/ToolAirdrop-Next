@@ -56,7 +56,7 @@ const Header = () => {
         }`}
     >
       <div className="relative mx-auto max-w-c-1390 px-0 md:px-8 xl:flex 2xl:px-0 w-full h-full ">
-        <div className="flex w-full items-center justify-between xl:w-1/4 px-5">
+        <div className="flex w-full items-center justify-between xl:w-1/4 px-5 dark:bg-black bg-white z-10">
           <a href="/news">
             <Image
               src="/images/logo/logo-dark.svg"
