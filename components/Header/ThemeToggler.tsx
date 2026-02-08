@@ -8,7 +8,7 @@ const ThemeToggler = () => {
     <button
       aria-label="theme toggler"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="bg-gray-2 dark:bg-dark-bg absolute right-17 mr-1.5 mt-1 flex cursor-pointer items-center justify-center rounded-full text-black dark:text-white lg:static"
+      className="bg-gray-2 dark:bg-dark-bg absolute right-17 mr-1.5 flex cursor-pointer items-center justify-center rounded-full text-black dark:text-white lg:static"
     >
       <Moon
         className="dark:hidden w-5 h-5 md:w-6 md:h-6"
