@@ -119,7 +119,7 @@ const Header = () => {
             }`}
         >
           <nav>
-            <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
+            <ul className="grid md:flex grid-cols-2 md:grid-cols-0 xl:items-center gap-5 xl:gap-10">
               {navigationItems.map((menuItem, key) => (
                 <li key={key} className={`${menuItem.submenu && "group relative"} md:!bg-transparent md:dark:!bg-transparent md:p-0 bg-gray-200/50 dark:bg-gray-800/50 md:shadow-none shadow-md px-5 py-2 rounded-md`}>
                   {menuItem.submenu ? (
