@@ -27,7 +27,7 @@ const Header = () => {
   const uniqueTags = Array.from(new Set(tags));
 
   const navigationItems: Menu[] = [
-    ...uniqueTags.map((tag, index) => ({
+    ...uniqueTags.slice(0, 5).map((tag, index) => ({
       id: index + 10,
       title: tag.charAt(0).toUpperCase() + tag.slice(1),
       newTab: false,
