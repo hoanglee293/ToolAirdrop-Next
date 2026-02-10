@@ -174,7 +174,7 @@ export default function NewsList() {
                     <div className="my-5 md:my-10 flex flex-col gap-6 rounded-lg bg-transparent">
                         <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
                             {/* Search */}
-                            <div className="relative w-full md:w-3/5 dark:bg-black bg-white z-10">
+                            <div className="relative w-full md:w-3/5 dark:bg-gray-900 rounded-xl bg-white z-10">
                                 <input
                                     type="text"
                                     placeholder="Search news..."

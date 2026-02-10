@@ -18,6 +18,11 @@ const remotePatterns = [
     port: "",
   },
   {
+    protocol: "https",
+    hostname: "ik.imagekit.io",
+    port: "",
+  },
+  {
     protocol: "http",
     hostname: "localhost",
     port: "",

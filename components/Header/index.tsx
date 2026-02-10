@@ -75,7 +75,7 @@ const Header = () => {
           </a>
 
           <div className="">
-            <div className="block md:hidden"><ThemeToggler /></div>
+            <div className="block md:hidden mt-[2px]"><ThemeToggler /></div>
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
               aria-label="hamburger Toggler"
