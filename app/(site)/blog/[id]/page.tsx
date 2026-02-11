@@ -2,7 +2,6 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import GetNewsById from "@/app/service/newById";
 import { ClockIcon, EyeIcon, FlameIcon } from "lucide-react";
@@ -123,11 +122,10 @@ export default function BlogDetailPage() {
                 <div className="mb-10 flex items-center gap-4 border-b border-stroke pb-8 dark:border-strokedark">
                     {news.authorImage && news.authorImage !== "ABC" && (
                         <div className="relative h-12 w-12 overflow-hidden rounded-full">
-                            <Image
+                            <img
                                 src={news.authorImage}
                                 alt={news.author}
-                                fill
-                                className="object-cover"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     )}
@@ -136,12 +134,10 @@ export default function BlogDetailPage() {
                 {/* Featured Image */}
                 {news.image && (
                     <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-lg">
-                        <Image
+                        <img
                             src={news.image}
                             alt={news.title}
-                            fill
-                            className="object-cover"
-                            priority
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 )}

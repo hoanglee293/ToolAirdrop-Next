@@ -3,7 +3,6 @@
 import NewsService from "@/app/service/news";
 import CategoryService from "@/app/service/category";
 import Link from "next/link";
-import Image from "next/image";
 import { useQuery } from "@tanstack/react-query";
 import { Eye, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -125,11 +124,10 @@ export default function NewsList() {
                                             featuredNews.map((news) => (
                                                 <div key={news._id || news.id} className="group relative overflow-hidden rounded-lg bg-white shadow-solid-4 dark:bg-blacksection">
                                                     <Link href={`/blog/${news._id || news.id}`} className="block relative aspect-[370/220] w-full overflow-hidden">
-                                                        <Image
+                                                        <img
                                                             src={news.image || '/images/blog/blog-01.png'}
                                                             alt={news.title}
-                                                            fill
-                                                            className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                                         />
                                                     </Link>
                                                     <div className="p-6">
@@ -264,11 +262,10 @@ export default function NewsList() {
                             newsList.map((news) => (
                                 <div key={news._id || news.id} className="group relative overflow-hidden rounded-lg bg-white shadow-solid-4 dark:bg-blacksection transition hover:shadow-1">
                                     <Link href={`/blog/${news._id || news.id}`} className="block relative aspect-[370/220] w-full overflow-hidden">
-                                        <Image
+                                        <img
                                             src={news.image || '/images/blog/blog-01.png'}
                                             alt={news.title}
-                                            fill
-                                            className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                         />
                                     </Link>
                                     <div className="p-6">
