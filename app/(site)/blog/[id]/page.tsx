@@ -99,11 +99,11 @@ export default function BlogDetailPage() {
                             <ClockIcon className="inline-block h-4 w-4 mr-1" /> {news.readTime}
                         </span>
                     )}
-                    {news.views !== undefined && (
+                    {/* {news.views !== undefined && (
                         <span className="text-sm text-body-color dark:text-body-color-dark">
                             <EyeIcon className="inline-block h-4 w-4 mr-1" /> {news.views}
                         </span>
-                    )}
+                    )} */}
                 </div>
 
                 {/* Title */}

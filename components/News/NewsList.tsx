@@ -146,7 +146,7 @@ export default function NewsList() {
                                                         )}
                                                         <div className="flex items-center gap-3 text-xs text-body-color">
                                                             <span>{news.date}</span>
-                                                            <div className="flex items-center gap-1"><Eye className="w-4 h-4" /> {news.views}</div>
+                                                            {/* <div className="flex items-center gap-1"><Eye className="w-4 h-4" /> {news.views}</div> */}
                                                         </div>
                                                     </div>
                                                 </div>
